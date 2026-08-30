@@ -80,12 +80,26 @@ Installed kernelspec linear-algebra in /Users/yourname/Library/Jupyter/kernels/l
 打开 `01-tensor-basics/tensor-basics.ipynb` 后：
 
 1. 点击右上角的内核选择器（或 `Cmd+Shift+P` → 输入 `Notebook: Select Notebook Kernel`）
-2. 选择 **Select Another Kernel...** → **Jupyter Kernel...**
-3. 选择 **Python (linear-algebra)**
+2. 选择 **Select Another Kernel...**
+3. **选择 Jupyter Kernel...**（不是 Python Environments...）
+4. 在列表中选择 **Python (linear-algebra)**
 
 选择后内核选择器会显示 `Python (linear-algebra)`，表示已连接到虚拟环境。
 
-> **如果不想注册内核**：也可以在第 2 步选 **Python Environments...** → **Enter interpreter path...** → **Browse...**，手动导航到 `linear-algebra/venv/bin/python`。但每次新建 notebook 都可能需要重新选择，不如注册内核方便。
+> **关键区别**：`Python Environments...` 是 VS Code 自动扫描的解释器，发现不了子目录里的 venv；`Jupyter Kernel...` 是从 Jupyter 注册表读取的，我们刚才注册的内核就在这里。
+
+#### 如果列表里没有 Python (linear-algebra)
+
+1. 先重载 VS Code 窗口：`Cmd+Shift+P` → `Developer: Reload Window`
+2. 重载后重复上面的步骤，注册的内核应该就出现了
+3. 如果还是没有，用手动方式：第 3 步改选 **Python Environments...** → **Enter interpreter path...** → **Browse...**，导航到 `linear-algebra/venv/bin/python`
+
+#### 内核与虚拟环境的关系
+
+- **虚拟环境（venv）**：实际运行代码的 Python 环境，包含 torch、numpy 等所有安装的包
+- **Jupyter 内核**：只是一个注册记录（`kernel.json`），告诉 Jupyter/VS Code "去调用这个 venv 里的 Python"
+- **注册内核不会安装任何包**，它只是创建一个指向 venv 的快捷方式
+- 删除内核（`jupyter kernelspec remove`）只会删除注册记录，不会删除 venv 里的任何东西
 
 ---
 
