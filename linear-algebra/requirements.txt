@@ -1,0 +1,27 @@
+# ============================================================
+# 深度学习线性代数课程 - Python 依赖
+# Python 版本：3.12（推荐，详见 guide.md）
+# 安装：uv pip install -r requirements.txt  或  pip install -r requirements.txt
+# ============================================================
+
+# --- 核心计算 ---
+
+# PyTorch：张量计算 + 自动求导（本课程核心库）
+# Mac 版默认支持 MPS 加速；CUDA 用户请参考
+# https://pytorch.org/get-started/locally/ 选择带 CUDA 的 wheel
+torch==2.13.0
+
+# NumPy：数值计算基础（与 torch 张量互转）
+numpy==2.5.2
+
+# Matplotlib：数据可视化（绘图展示张量与统计结果）
+matplotlib==3.11.1
+
+# --- Jupyter 运行环境 ---
+
+# ipykernel：VS Code / Jupyter 运行 notebook 的 Python 内核（必需）
+ipykernel==7.3.0
+
+# jupyter：网页版 Jupyter Notebook 元包
+# VS Code 用户可注释掉此行以减少安装体积（VS Code 直连 venv 内核，不需要网页版）
+jupyter==1.1.1

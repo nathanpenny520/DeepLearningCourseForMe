@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 虚拟环境
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 系统
+.DS_Store
+
+# 备份文件（审核后手动删除）
+*.bak
+
+
