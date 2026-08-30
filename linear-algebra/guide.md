@@ -1,7 +1,7 @@
 ## 环境配置
 
 > 推荐 Python 3.12（不建议使用最新版如 3.14，深度学习库可能尚未兼容）。
-> 工作目录：本模块根目录 `linear-algebra/`（即本文件所在目录）
+> 以下所有命令均在**仓库根目录**下开始执行，先进入模块目录 `cd linear-algebra`。
 
 **首选方案：uv**（Rust 编写的极速 Python 包管理器，替代 venv + pip）。
 传统 venv + pip 方案见文末备选。
@@ -31,6 +31,7 @@ uv --version
 #### 2. 创建虚拟环境
 
 ```bash
+# 在仓库根目录下执行
 cd linear-algebra
 
 # 创建 venv，指定 Python 3.12
@@ -54,19 +55,37 @@ uv pip install -r requirements.txt
 
 ---
 
-### 在 VS Code 中使用 Notebook（无需注册内核）
+### 注册 Jupyter 内核（推荐执行一次）
 
-VS Code 的 Jupyter 扩展可以**直接使用虚拟环境中的 Python 解释器**，不需要执行 `ipykernel install` 注册内核。
+由于虚拟环境位于模块子目录（`linear-algebra/venv/`），VS Code 的自动搜索可能发现不了它。**注册内核后，VS Code 和网页版 Jupyter 都能在内核列表中直接选择，一劳永逸。**
 
-打开 `.ipynb` 文件后：
+```bash
+# 确保已激活 venv
+source venv/bin/activate
+python -m ipykernel install --user --name=linear-algebra --display-name="Python (linear-algebra)"
+```
+
+注册成功输出示例：
+
+```
+Installed kernelspec linear-algebra in /Users/yourname/Library/Jupyter/kernels/linear-algebra
+```
+
+> 每个模块只需注册一次。如果之后新增了其他模块（如 calculus），在对应模块的 venv 中用不同的 `--name` 重复此步骤即可。
+
+---
+
+### 在 VS Code 中使用 Notebook
+
+打开 `01-tensor-basics/tensor-basics.ipynb` 后：
 
 1. 点击右上角的内核选择器（或 `Cmd+Shift+P` → 输入 `Notebook: Select Notebook Kernel`）
-2. 选择 **Select Another Kernel...** → **Python Environments...**
-3. 选择工作目录下的 `venv`（通常显示为 `venv/bin/python`）
+2. 选择 **Select Another Kernel...** → **Jupyter Kernel...**
+3. 选择 **Python (linear-algebra)**
 
-选择后内核选择器会显示类似 `venv (3.12.x) venv/bin/python`，表示 VS Code 已直连虚拟环境运行 notebook。
+选择后内核选择器会显示 `Python (linear-algebra)`，表示已连接到虚拟环境。
 
-> 原理：VS Code 直接调用 `venv/bin/python -m ipykernel_launcher` 来启动内核，绕过了 Jupyter 的 kernelspec 注册表。只要虚拟环境里装了 `ipykernel`（`requirements.txt` 已包含），就能直接用。
+> **如果不想注册内核**：也可以在第 2 步选 **Python Environments...** → **Enter interpreter path...** → **Browse...**，手动导航到 `linear-algebra/venv/bin/python`。但每次新建 notebook 都可能需要重新选择，不如注册内核方便。
 
 ---
 
@@ -78,7 +97,7 @@ VS Code 的 Jupyter 扩展可以**直接使用虚拟环境中的 Python 解释�
 # 1. 安装 Python 3.12（如未安装）
 brew install python@3.12
 
-# 2. 进入项目目录
+# 2. 进入模块目录（在仓库根目录下执行）
 cd linear-algebra
 
 # 3. 创建虚拟环境
@@ -91,39 +110,29 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+安装完成后，同样需要执行上面的「注册 Jupyter 内核」步骤。
+
 ---
 
 ### 如果你使用 JupyterLab / Jupyter Notebook（网页版）
 
-网页版 Jupyter 依赖 kernelspec 注册表来发现内核，因此需要额外注册一步：
+注册内核后，启动网页版：
 
 ```bash
 source venv/bin/activate
-python -m ipykernel install --user --name=dl_venv --display-name="Python (dl-demo-torch)"
-```
-
-注册成功输出示例：
-
-```
-Installed kernelspec dl_venv in /Users/yourname/Library/Jupyter/kernels/dl_venv
-```
-
-启动：
-
-```bash
 jupyter notebook
 ```
 
-在网页界面中通过 **Kernel → Change Kernel** 选择 `Python (dl-demo-torch)`。
+在网页界面中通过 **Kernel → Change Kernel** 选择 `Python (linear-algebra)`。
 
-#### 内核维护命令
+---
+
+### 内核维护命令
 
 ```bash
 # 查看已注册的 Jupyter 内核列表
 jupyter kernelspec list
 
 # 删除注册的内核（仅移除 Jupyter 内核记录，不会删除本地 venv 文件夹）
-jupyter kernelspec remove dl_venv
+jupyter kernelspec remove linear-algebra
 ```
-
-> 提示：注册内核只需执行一次；VS Code 用户可跳过此步骤。

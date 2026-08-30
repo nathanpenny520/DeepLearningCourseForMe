@@ -10,6 +10,24 @@
 
 各模块内的具体课程目录见对应模块的 `README.md`。
 
+## 快速开始
+
+```bash
+# 1. 克隆仓库
+git clone git@github.com:nathanpenny520/DeepLearningCourseForMe.git
+cd DeepLearningCourseForMe
+
+# 2. 进入想学习的模块，按其 guide.md 配置环境
+cd linear-algebra
+# 完整步骤见 linear-algebra/guide.md，核心命令：
+uv venv venv --python 3.12
+source venv/bin/activate
+uv pip install -r requirements.txt
+python -m ipykernel install --user --name=linear-algebra --display-name="Python (linear-algebra)"
+
+# 3. 在 VS Code 中打开对应课程的 .ipynb，内核选择 Python (linear-algebra)
+```
+
 ## 仓库结构
 
 ```
