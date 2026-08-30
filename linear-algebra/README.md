@@ -12,17 +12,17 @@
 
 本模块所有课程共用一套依赖与虚拟环境，完整配置步骤见 [`guide.md`](./guide.md)。
 
-快速上手（在仓库根目录下执行）：
+快速上手（Mac，在仓库根目录下执行）：
 
 ```bash
 cd linear-algebra
 uv venv venv --python 3.12
 source venv/bin/activate
 uv pip install -r requirements.txt
-
-# 注册内核（执行一次，VS Code 即可在列表中直接选择）
 python -m ipykernel install --user --name=linear-algebra --display-name="Python (linear-algebra)"
 ```
+
+> Windows 用户的激活命令及完整步骤见 [`guide.md`](./guide.md)。
 
 然后在 VS Code 中打开对应课程的 `.ipynb`，内核选择器里选 **Python (linear-algebra)**。
 
