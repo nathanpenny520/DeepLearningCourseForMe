@@ -1,24 +1,32 @@
 # Deep Learning Course For Me
 
-个人深度学习系列课程笔记与实战代码。每堂课一个独立文件夹，自带环境与说明，可单独运行。
+个人深度学习系列课程笔记与实战代码。按模块组织，每个模块下含多堂编号课程，共用一套依赖与虚拟环境。
 
 ## 课程目录
 
-| # | 课程 | 文件夹 | 状态 |
-|---|------|--------|------|
-| 1 | 深度学习中的线性代数：PyTorch 实战 | [linear-algebra](./linear-algebra) | ✅ |
+| 模块 | 说明 | 文件夹 | 课程数 |
+|------|------|--------|--------|
+| 线性代数 | 张量、矩阵运算、特征值、SVD 等 | [linear-algebra](./linear-algebra) | 1 |
 
-## 每堂课的通用结构
+各模块内的具体课程目录见对应模块的 `README.md`。
+
+## 仓库结构
 
 ```
-course-name/
-├── README.md          # 本课说明与内容大纲
-├── guide.md           # 环境配置指南（可选）
-├── requirements.txt   # Python 依赖（已锁定版本）
-└── *.ipynb            # 教学代码（Jupyter Notebook）
+DeepLearningCourseForMe/
+├── README.md                 # 本文件：模块总览
+├── .gitignore
+└── linear-algebra/           # 模块：线性代数
+    ├── README.md             # 模块总览与课程目录
+    ├── guide.md              # 环境配置（模块内通用）
+    ├── requirements.txt      # 依赖（模块内通用，已锁定版本）
+    ├── venv/                 # 虚拟环境（不提交）
+    └── 01-tensor-basics/     # 第 1 课
+        ├── README.md         # 本课说明
+        └── tensor-basics.ipynb
 ```
 
-每堂课使用独立虚拟环境，进入对应文件夹后按其 `README.md` / `guide.md` 配置即可。
+每个模块共用一套虚拟环境；进入模块目录后按其 `guide.md` 配置，再打开对应课程的 notebook。
 
 ## 通用环境要求
 

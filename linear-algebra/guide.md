@@ -1,7 +1,7 @@
 ## 环境配置
 
 > 推荐 Python 3.12（不建议使用最新版如 3.14，深度学习库可能尚未兼容）。
-> 工作目录：`~/Projects/deeplearning/linear-algebra`
+> 工作目录：本模块根目录 `linear-algebra/`（即本文件所在目录）
 
 **首选方案：uv**（Rust 编写的极速 Python 包管理器，替代 venv + pip）。
 传统 venv + pip 方案见文末备选。
@@ -31,7 +31,7 @@ uv --version
 #### 2. 创建虚拟环境
 
 ```bash
-cd ~/Projects/deeplearning/linear-algebra
+cd linear-algebra
 
 # 创建 venv，指定 Python 3.12
 # uv 会自动下载并管理 Python 版本，无需提前安装 Python 3.12
@@ -79,7 +79,7 @@ VS Code 的 Jupyter 扩展可以**直接使用虚拟环境中的 Python 解释�
 brew install python@3.12
 
 # 2. 进入项目目录
-cd ~/Projects/deeplearning/linear-algebra
+cd linear-algebra
 
 # 3. 创建虚拟环境
 python3.12 -m venv venv
