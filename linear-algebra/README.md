@@ -47,7 +47,6 @@ uv pip install -r requirements.txt
 
 ```
 linear-algebra/
-├── .gitignore
 ├── README.md
 ├── guide.md              # 环境配置指南
 ├── requirements.txt      # Python 依赖
