@@ -25,3 +25,6 @@ Thumbs.db
 # 备份
 *.bak
 *.tmp
+
+# 本地个人文件（不提交到 GitHub）
+COURSE_UPDATE_GUIDE.md
