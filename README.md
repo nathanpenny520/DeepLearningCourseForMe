@@ -8,6 +8,9 @@
 |------|------|--------|--------|
 | 线性代数 | 张量、矩阵运算、特征值、SVD 等 | [linear-algebra](./linear-algebra) | 8 |
 | 微积分 | 导数、多元微积分、梯度、链式法则、自动微分等 | [calculus](./calculus) | 8 |
+| 概率统计 | 分布、期望方差、贝叶斯、极大似然、信息论、采样等 | [probability](./probability) | 8 |
+| 神经网络核心 | MLP、激活与损失、训练循环、正则化、初始化、优化器等 | [neural-networks](./neural-networks) | 8 |
+| CNN 与 Transformer | 卷积、经典网络、注意力、Transformer、GPT 等 | [deep-learning-architectures](./deep-learning-architectures) | 6 |
 
 各模块内的具体课程目录见对应模块的 `README.md`。
 
@@ -51,6 +54,9 @@ DeepLearningCourseForMe/
     └── 01-derivatives/       # 第 1 课
         ├── README.md
         └── derivatives.ipynb
+
+# 其余模块（probability / neural-networks / deep-learning-architectures）
+# 结构完全相同：README + guide + requirements + venv + 编号课程文件夹
 ```
 
 每个模块共用一套虚拟环境；进入模块目录后按其 `guide.md` 配置，再打开对应课程的 notebook。
