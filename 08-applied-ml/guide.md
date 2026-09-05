@@ -94,6 +94,6 @@ jupyter kernelspec remove applied-ml
 
 ### 数据说明
 
-- 01/02/08 课会在首次运行时自动下载公开的 Titanic 数据集（GitHub 镜像：`raw.githubusercontent.com/datasciedojo/datasets/master/titanic.csv`）。
-- 若网络不可用，课程代码会自动回退到 scikit-learn 内置数据集（如 breast_cancer），保证所有 notebook 在任何环境都能跑通。
+- 01/02/05/06/08 课使用的公开 Titanic 数据集：**本地缓存优先**（`08-applied-ml/titanic.csv`），首次运行会自动从 jsDelivr CDN 下载（`cdn.jsdelivr.net/gh/datasciencedojo/datasets@master/titanic.csv`），GitHub raw 作为备用源，各 15s 超时。
+- 若数据完全不可用：02/05/06 课自动回退 scikit-learn 内置数据集（breast_cancer），保证跑通；01/08 课因教学内容依赖 Titanic 真实缺失模式，会给出明确指引（联网重跑或手动放置 `titanic.csv` 到模块根目录）。
 - 课后练习涉及的 Kaggle 竞赛（Titanic / House Prices / Digit Recognizer / Porto Seguro）需要 Kaggle 账号在线完成，见各课 README 中的链接。

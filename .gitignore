@@ -32,3 +32,15 @@ COURSE_UPDATE_GUIDE.md
 # 08-applied-ml 构建辅助脚本（本地生成 notebook 用，不提交）
 08-applied-ml/_build_*.py
 08-applied-ml/_common.py
+
+# 08-applied-ml 数据缓存（运行期下载，不提交）
+08-applied-ml/titanic.csv
+
+# 08-applied-ml 运行期产物（notebook 演示生成，不提交）
+08-applied-ml/*/split_idx.npy
+08-applied-ml/*/model.joblib
+08-applied-ml/*/submission.csv
+
+08-applied-ml/*/submission_demo.csv
+08-applied-ml/*/best.npz
+08-applied-ml/*/experiment_log.csv
