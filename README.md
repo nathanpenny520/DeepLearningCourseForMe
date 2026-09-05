@@ -6,7 +6,8 @@
 
 | 模块 | 说明 | 文件夹 | 课程数 |
 |------|------|--------|--------|
-| 线性代数 | 张量、矩阵运算、特征值、SVD 等 | [linear-algebra](./linear-algebra) | 1 |
+| 线性代数 | 张量、矩阵运算、特征值、SVD 等 | [linear-algebra](./linear-algebra) | 8 |
+| 微积分 | 导数、多元微积分、梯度、链式法则、自动微分等 | [calculus](./calculus) | 1 |
 
 各模块内的具体课程目录见对应模块的 `README.md`。
 
@@ -34,14 +35,22 @@ python -m ipykernel install --user --name=linear-algebra --display-name="Python 
 DeepLearningCourseForMe/
 ├── README.md                 # 本文件：模块总览
 ├── .gitignore
-└── linear-algebra/           # 模块：线性代数
+├── linear-algebra/           # 模块：线性代数
+│   ├── README.md             # 模块总览与课程目录
+│   ├── guide.md              # 环境配置（模块内通用）
+│   ├── requirements.txt      # 依赖（模块内通用，已锁定版本）
+│   ├── venv/                 # 虚拟环境（不提交）
+│   └── 01-tensor-basics/     # 第 1 课
+│       ├── README.md         # 本课说明
+│       └── tensor-basics.ipynb
+└── calculus/                 # 模块：微积分
     ├── README.md             # 模块总览与课程目录
     ├── guide.md              # 环境配置（模块内通用）
     ├── requirements.txt      # 依赖（模块内通用，已锁定版本）
     ├── venv/                 # 虚拟环境（不提交）
-    └── 01-tensor-basics/     # 第 1 课
-        ├── README.md         # 本课说明
-        └── tensor-basics.ipynb
+    └── 01-derivatives/       # 第 1 课
+        ├── README.md
+        └── derivatives.ipynb
 ```
 
 每个模块共用一套虚拟环境；进入模块目录后按其 `guide.md` 配置，再打开对应课程的 notebook。
