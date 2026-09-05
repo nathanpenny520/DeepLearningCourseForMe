@@ -1,22 +1,9 @@
-# 06 · Projections, Least Squares & Orthogonalization
+# Projections, Least Squares & Orthogonalization
 
-投影、最小二乘与正交化：投影矩阵、Gram-Schmidt 正交化、最小二乘法的几何解释与多种实现。代码为主，配可视化。
+投影、最小二乘与正交化：投影矩阵、Gram-Schmidt、最小二乘的几何解释与多种实现（正规方程 / QR / SVD）。
 
-## 前置要求
+**运行**：VS Code 打开 `projections-least-squares.ipynb`，内核选 **Python (linear-algebra)**。
 
-- 已完成 01-05 节
-- 关键前置：四个基本子空间、秩、正交性、QR 分解、SVD
+**前置**：先完成 [01](../01-tensor-basics) ~ [05](../05-vector-spaces-rank)
 
-## 课程内容
-
-| 章节 | 内容 |
-|------|------|
-| 0 | 环境配置与导入 |
-| 1 | 投影到一条直线（1D 子空间） |
-| 2 | 投影到高维子空间与投影矩阵 |
-| 3 | 投影矩阵的性质与正交补 |
-| 4 | Gram-Schmidt 正交化（手动实现 + 与 QR 的关系） |
-| 5 | 最小二乘法：几何解释与正规方程 |
-| 6 | 最小二乘的多种实现对比（正规方程 / QR / SVD / lstsq） |
-| 7 | 应用：线性回归拟合（含多项式回归） |
-| - | 课后练习 |
+**关键结论**：最小二乘 = 向子空间投影；正规方程 / QR / SVD 三种实现的数值稳定性差异值得对比。

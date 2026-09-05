@@ -1,24 +1,9 @@
-# 08 · Probability in Deep Learning
+# Probability in Deep Learning
 
-概率统计模块综合：损失=负对数似然全景、softmax 温度、MC-Dropout 不确定性、VAE 的 ELBO 分解、概率校准、模块总结。
+概率统计模块综合：损失 = 负对数似然全景、softmax 温度、MC-Dropout 不确定性、VAE 的 ELBO 分解、概率校准。
 
-## 前置要求
+**运行**：VS Code 打开 `probability-in-deep-learning.ipynb`，内核选 **Python (probability)**。
 
-- 完成本模块 01-07 全部课程
+**前置**：先完成本模块 [01](../01-random-variables-distributions) ~ [07](../07-sampling-monte-carlo)
 
-## 课程内容
-
-| 章节 | 内容 |
-|------|------|
-| 1 | 概率在深度学习中的位置全景 |
-| 2 | Softmax 温度与熵 |
-| 3 | Dropout 与 MC-Dropout 不确定性 |
-| 4 | 生成模型初探：ELBO 分解 |
-| 5 | 概率校准 |
-| 6 | 模块总结 |
-| - | 课后练习 |
-
-## 学习建议
-
-- 本课是"概率 → 深度学习"的桥梁，与 nn-core 模块的损失/正则化章节直接衔接
-- ELBO 的"重构 + KL"分解值得记牢，它是所有生成模型（VAE/GAN 分析/Diffusion）的共同骨架
+**关键结论**：ELBO = "重构 + KL"，是所有生成模型（VAE / GAN / Diffusion）的共同骨架。

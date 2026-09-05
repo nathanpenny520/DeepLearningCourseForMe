@@ -1,23 +1,9 @@
-# 03 · Joint, Conditional & Bayes
+# Joint, Conditional & Bayes
 
-联合分布、条件分布与贝叶斯定理：边缘化、条件概率、医学检测直觉陷阱、朴素贝叶斯分类器、生成 vs 判别模型。
+联合分布与边缘化、条件分布、贝叶斯定理、朴素贝叶斯分类器、生成 vs 判别模型。
 
-## 前置要求
+**运行**：VS Code 打开 `joint-conditional-bayes.ipynb`，内核选 **Python (probability)**。
 
-- 先完成 [01-random-variables-distributions](../01-random-variables-distributions)
+**前置**：先完成 [01 Random Variables & Distributions](../01-random-variables-distributions)
 
-## 课程内容
-
-| 章节 | 内容 |
-|------|------|
-| 1 | 联合分布与边缘分布 |
-| 2 | 条件分布 |
-| 3 | 贝叶斯定理（先验→似然→后验） |
-| 4 | 朴素贝叶斯分类器 |
-| 5 | 生成 vs 判别模型 |
-| - | 课后练习 |
-
-## 学习建议
-
-- 医学检测例子要亲手算一遍——这是贝叶斯"违反直觉"的最佳案例
-- 贝叶斯公式是 08 课 VAE、以及以后一切生成模型的地基
+**关键结论**：贝叶斯"违反直觉"（医学检测例子要手算）；它是 VAE 与一切生成模型的地基。

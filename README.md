@@ -13,6 +13,7 @@
 | CNN 与 Transformer | 卷积、经典网络、注意力、Transformer、GPT 等 | [deep-learning-architectures](./05-deep-learning-architectures) | 6 |
 | 计算机视觉 | ViT、迁移学习、检测分割、GAN、VAE、扩散模型、文生图等 | [computer-vision](./06-computer-vision) | 8 |
 | 大语言模型 | 分词、规模定律、预训练、LoRA、对齐、KV Cache、RAG、评估等 | [llm](./07-llm) | 8 |
+| 应用与工程实战 | numpy/pandas/sklearn 端到端工程：数据、基线、调参、部署、监控 | [applied-ml](./08-applied-ml) | 8 |
 
 各模块内的具体课程目录见对应模块的 `README.md`。
 
@@ -48,17 +49,8 @@ DeepLearningCourseForMe/
 │   └── 01-tensor-basics/     # 第 1 课
 │       ├── README.md         # 本课说明
 │       └── tensor-basics.ipynb
-└── 02-calculus/                 # 模块：微积分
-    ├── README.md             # 模块总览与课程目录
-    ├── guide.md              # 环境配置（模块内通用）
-    ├── requirements.txt      # 依赖（模块内通用，已锁定版本）
-    ├── venv/                 # 虚拟环境（不提交）
-    └── 01-derivatives/       # 第 1 课
-        ├── README.md
-        └── derivatives.ipynb
 
-# 其余模块（03-probability / 04-neural-networks / 05-deep-learning-architectures / 06-computer-vision / 07-llm）
-# 结构完全相同：README + guide + requirements + venv + 编号课程文件夹
+# 其余模块（02-calculus ~ 08-applied-ml）结构完全相同：README + guide + requirements + venv + 编号课程文件夹
 ```
 
 每个模块共用一套虚拟环境；进入模块目录后按其 `guide.md` 配置，再打开对应课程的 notebook。

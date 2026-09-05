@@ -1,4 +1,4 @@
-# 01 ViT & Modern Recognition
+# ViT & Modern Recognition
 
 Vision Transformer 与现代识别：把图像切成 patch 当"词"建模，对比 CNN 归纳偏置，动手训练微型 ViT 完成 4 类图像分类。
 

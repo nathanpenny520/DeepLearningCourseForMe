@@ -1,6 +1,6 @@
-# neural-networks 模块
+# 神经网络核心模块
 
-深度学习核心系列课程：从零实现 MLP、激活与损失、训练循环、正则化、权重初始化、优化器实践、过拟合与泛化，最终搭出迷你训练框架。每堂课一个独立子文件夹，按编号排序，共用一套依赖与虚拟环境。
+深度学习核心系列课程：从零实现 MLP、激活与损失、训练循环、正则化、权重初始化、优化器实践、过拟合与泛化，最终搭出迷你训练框架。每堂课一个独立子文件夹，按编号排序。
 
 ## 课程目录
 
@@ -17,36 +17,4 @@
 
 ## 环境配置
 
-本模块所有课程共用一套依赖与虚拟环境，完整配置步骤见 [`guide.md`](./guide.md)。
-
-快速上手（Mac，在仓库根目录下执行）：
-
-```bash
-cd neural-networks
-uv venv venv --python 3.12
-source venv/bin/activate
-uv pip install -r requirements.txt
-python -m ipykernel install --user --name=neural-networks --display-name="Python (neural-networks)"
-```
-
-> Windows 用户的激活命令及完整步骤见 [`guide.md`](./guide.md)。
-
-然后在 VS Code 中打开对应课程的 `.ipynb`，内核选择器里选 **Python (neural-networks)**。
-
-## 模块结构
-
-```
-04-neural-networks/
-├── README.md              # 本文件：模块总览与课程目录
-├── guide.md               # 环境配置指南（全模块通用）
-├── requirements.txt       # Python 依赖（全模块通用）
-├── venv/                  # 虚拟环境（不提交）
-├── 01-mlp-from-scratch/
-├── 02-activations-losses/
-├── 03-training-loop/
-├── 04-regularization/
-├── 05-weight-initialization/
-├── 06-optimizers-in-practice/
-├── 07-overfitting-generalization/
-├── 08-mini-training-framework/
-```
+本模块所有课程共用一套依赖与虚拟环境，完整配置步骤见 [`guide.md`](./guide.md)，注册内核名为 **Python (neural-networks)**。

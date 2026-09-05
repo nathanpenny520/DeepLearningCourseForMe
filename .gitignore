@@ -28,3 +28,7 @@ Thumbs.db
 
 # 本地个人文件（不提交到 GitHub）
 COURSE_UPDATE_GUIDE.md
+
+# 08-applied-ml 构建辅助脚本（本地生成 notebook 用，不提交）
+08-applied-ml/_build_*.py
+08-applied-ml/_common.py

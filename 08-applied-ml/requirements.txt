@@ -1,0 +1,7 @@
+# 08-applied-ml 依赖（全部 CPU 即可运行）
+numpy>=2.0
+pandas>=2.2
+scikit-learn>=1.5
+matplotlib>=3.9
+ipykernel>=7
+jupyter>=1.1

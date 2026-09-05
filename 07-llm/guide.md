@@ -1,7 +1,7 @@
 ## 环境配置
 
 > 推荐 Python 3.12（不建议使用最新版如 3.14，深度学习库可能尚未兼容）。
-> 以下命令均在**仓库根目录**下开始执行，先进入模块目录 `cd llm`。
+> 以下命令均在**仓库根目录**下开始执行，先进入模块目录 `cd 07-llm`。
 > 课程代码本身跨平台，仅安装和激活命令因系统而异。
 
 **首选方案：uv**（极速 Python 包管理器，自动管理 Python 版本）。
@@ -25,7 +25,7 @@
 uv 会自动下载 Python 3.12，无需提前安装。
 
 ```bash
-cd llm
+cd 07-llm
 uv venv venv --python 3.12
 ```
 
@@ -70,14 +70,14 @@ python -m ipykernel install --user --name=llm --display-name="Python (llm)"
 #### 如果列表里没有
 
 1. 重载窗口：`Cmd+Shift+P` / `Ctrl+Shift+P` → `Developer: Reload Window`
-2. 仍没有则手动指定：`Python Environments...` → `Enter interpreter path...` → 浏览到 `07-llm/venv/bin/python`（Mac）或 `llm\venv\Scripts\python.exe`（Windows）
+2. 仍没有则手动指定：`Python Environments...` → `Enter interpreter path...` → 浏览到 `07-llm/venv/bin/python`（Mac）或 `07-llm\venv\Scripts\python.exe`（Windows）
 
 ---
 
 ### 方案二：传统 venv + pip（备选）
 
 ```bash
-cd llm
+cd 07-llm
 ```
 
 | 系统 | 创建 | 激活 |

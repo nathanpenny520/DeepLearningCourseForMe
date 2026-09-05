@@ -1,25 +1,9 @@
-# 01 · Random Variables & Distributions
+# Random Variables & Distributions
 
-随机变量与分布：PMF/PDF/CDF 三件套、常见离散分布（伯努利/二项/泊松）、连续分布（均匀/指数/正态）、CDF 与 PDF 互逆的数值验证。
+PMF / PDF / CDF 三件套、常见离散分布（伯努利 / 二项 / 泊松）、连续分布（均匀 / 指数 / 正态）、CDF 与 PDF 互逆的数值验证。
 
-## 前置要求
+**运行**：VS Code 打开 `random-variables-distributions.ipynb`，内核选 **Python (probability)**。
 
-- 已按 [`../guide.md`](../guide.md) 配置好虚拟环境
-- 建议先完成 calculus 07（积分与概率衔接）
+**前置**：建议先完成 [calculus 07](../02-calculus/07-integration-probability)
 
-## 课程内容
-
-| 章节 | 内容 |
-|------|------|
-| 1 | 随机变量：离散与连续 |
-| 2 | PMF：伯努利 / 二项 / 泊松 |
-| 3 | PDF / CDF：均匀 / 指数 / 正态 |
-| 4 | CDF 的导数 = PDF（数值验证） |
-| 5 | 分布的数字特征预览 |
-| 6 | 与深度学习的关系 |
-| - | 课后练习 |
-
-## 学习建议
-
-- 三件套（PMF/PDF/CDF）是后续所有课的公共语言
-- 指数分布的无记忆性是理解"泊松过程/排队"的关键，务必自己推一遍
+**关键结论**：PMF / PDF / CDF 是后续所有课的公共语言；指数分布的无记忆性值得自己推一遍。

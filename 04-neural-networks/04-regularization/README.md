@@ -1,23 +1,9 @@
-# 04 · Regularization
+# Regularization
 
-正则化：多项式过拟合演示、L1（稀疏）vs L2（收缩）、Dropout 原理与实现、早停与数据增强、AdamW 与权重衰减的关系。
+多项式过拟合演示、L1（稀疏）vs L2（收缩）、Dropout 原理与实现、早停与数据增强、AdamW 与权重衰减的关系。
 
-## 前置要求
+**运行**：VS Code 打开 `regularization.ipynb`，内核选 **Python (neural-networks)**。
 
-- 先完成 [03-training-loop](../03-training-loop)
+**前置**：先完成 [03 Training Loop](../03-training-loop)
 
-## 课程内容
-
-| 章节 | 内容 |
-|------|------|
-| 1 | 过拟合：高次多项式 |
-| 2 | L1 vs L2 |
-| 3 | Dropout |
-| 4 | 早停与数据增强 |
-| 5 | 权重衰减与 AdamW |
-| - | 课后练习 |
-
-## 学习建议
-
-- L1/L2 的"稀疏 vs 收缩"差异是面试高频考点，务必理解几何直觉（L1 的角点）
-- Dropout 的期望不变缩放 1/(1-p) 要会推导
+**关键结论**：L1 稀疏 vs L2 收缩（几何直觉：L1 的角点）是高频考点；Dropout 期望不变的缩放 1/(1−p) 要会推导。

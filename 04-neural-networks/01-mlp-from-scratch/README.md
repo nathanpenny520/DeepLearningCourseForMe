@@ -1,26 +1,9 @@
-# 01 · MLP from Scratch
+# MLP from Scratch
 
-用 numpy 从零实现多层感知机：前向、反向传播（BCE+sigmoid）、训练循环、决策边界，并与 torch autograd 梯度对拍。
+用 numpy 从零实现多层感知机：前向、反向传播（BCE + sigmoid）、训练循环、决策边界，并与 torch autograd 梯度对拍。
 
-## 前置要求
+**运行**：VS Code 打开 `mlp-from-scratch.ipynb`，内核选 **Python (neural-networks)**。
 
-- 已按 [`../guide.md`](../guide.md) 配置好虚拟环境
-- 强烈建议先完成 calculus 05（自动微分与反向传播）
+**前置**：强烈建议先完成 [calculus 05](../02-calculus/05-autograd-backpropagation)
 
-## 课程内容
-
-| 章节 | 内容 |
-|------|------|
-| 1 | 二维高斯簇数据集 |
-| 2 | 网络结构 2-4-1 |
-| 3 | 反向传播公式 |
-| 4 | 手写梯度 vs torch 对拍 |
-| 5 | 训练循环 |
-| 6 | 决策边界可视化 |
-| 7 | 从手写到框架 |
-| - | 课后练习 |
-
-## 学习建议
-
-- 第 4 节的梯度对拍是全课核心：推导对错一测便知
-- 以后用框架遇到梯度 bug，回到手写推导排查
+**关键结论**：梯度对拍是全课核心——推导对错一测便知；以后用框架遇到梯度 bug，回到手写推导排查。

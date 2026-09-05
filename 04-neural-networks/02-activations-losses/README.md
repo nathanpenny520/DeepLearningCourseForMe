@@ -1,24 +1,9 @@
-# 02 · Activations & Losses
+# Activations & Losses
 
-激活函数与损失函数：五类激活及其导数、线性堆叠=单层的证明、回归/分类损失对照、0-1 损失的平滑代理视角。
+五类激活函数及其导数、线性堆叠 = 单层的证明、回归 / 分类损失对照、0-1 损失的平滑代理视角。
 
-## 前置要求
+**运行**：VS Code 打开 `activations-losses.ipynb`，内核选 **Python (neural-networks)**。
 
-- 先完成 [01-mlp-from-scratch](../01-mlp-from-scratch)
-- 概率 05（损失=NLL）对照
+**前置**：先完成 [01 MLP from Scratch](../01-mlp-from-scratch)
 
-## 课程内容
-
-| 章节 | 内容 |
-|------|------|
-| 1 | 激活函数全家桶 |
-| 2 | 非线性必要性证明 |
-| 3 | 损失函数：回归与分类 |
-| 4 | 损失的可微性 |
-| 5 | 选择指南 |
-| - | 课后练习 |
-
-## 学习建议
-
-- "线性堆叠=单层"的证明是理解深度学习的基石
-- 输出层与损失要配套（softmax→CE / sigmoid→BCE），不要混搭
+**关键结论**："线性堆叠 = 单层"是理解深度学习的基石；输出层与损失要配套（softmax→CE / sigmoid→BCE）。

@@ -1,24 +1,9 @@
-# 02 · CNN Classic Networks
+# CNN Classic Networks
 
-经典网络：LeNet→AlexNet→VGG→ResNet 演进、残差连接的梯度实验验证、残差块实现、小 CNN 训练（合成条形图）。
+LeNet → AlexNet → VGG → ResNet 演进、残差连接的梯度实验验证、残差块实现、小 CNN 训练（合成条形图）。
 
-## 前置要求
+**运行**：VS Code 打开 `cnn-classic-networks.ipynb`，内核选 **Python (deep-learning-architectures)**。
 
-- 先完成 [01-cnn-basics](../01-cnn-basics)
-- calculus 08（梯度消失）与 nn-core 05（初始化）对照
+**前置**：先完成 [01 CNN Basics](../01-cnn-basics)
 
-## 课程内容
-
-| 章节 | 内容 |
-|------|------|
-| 1 | 经典网络演进 |
-| 2 | 残差连接：梯度实验 |
-| 3 | 残差块实现 |
-| 4 | 小 CNN 训练 |
-| 5 | 从 8×8 到真实图像 |
-| - | 课后练习 |
-
-## 学习建议
-
-- 残差梯度的 log 图是本课最值得反复看的图：一句话解释"为什么深了还能训"
-- 合成数据的价值：可控、快速、聚焦结构学习
+**关键结论**：残差梯度的 log 图一句话解释"为什么深了还能训"；合成数据价值在于可控、快速、聚焦结构学习。

@@ -1,23 +1,9 @@
-# 02 · Expectation & Variance
+# Expectation & Variance
 
-期望与方差：线性性质、方差公式推导、常见分布期望方差表（蒙特卡洛验证）、协方差与相关系数直觉、期望在机器学习中的角色。
+期望的线性性质、方差公式推导、常见分布期望方差表（蒙特卡洛验证）、协方差与相关系数直觉。
 
-## 前置要求
+**运行**：VS Code 打开 `expectation-variance.ipynb`，内核选 **Python (probability)**。
 
-- 先完成 [01-random-variables-distributions](../01-random-variables-distributions)
+**前置**：先完成 [01 Random Variables & Distributions](../01-random-variables-distributions)
 
-## 课程内容
-
-| 章节 | 内容 |
-|------|------|
-| 1 | 期望：概率加权平均与线性性质 |
-| 2 | 方差：E[X²]−E[X]² 推导 |
-| 3 | 常见分布期望方差表 |
-| 4 | 协方差与相关系数直觉 |
-| 5 | 期望在机器学习中的角色 |
-| - | 课后练习 |
-
-## 学习建议
-
-- 线性性质与方差展开式是本课唯一需要背的公式，其余都可推导
-- "期望不能穿过非线性函数"是以后理解 Jensen 不等式、KL 非负性的基础
+**关键结论**：只需记住线性性质与 Var = E[X²] − E[X]²；"期望不能穿过非线性函数"是理解 Jensen 不等式、KL 非负性的基础。

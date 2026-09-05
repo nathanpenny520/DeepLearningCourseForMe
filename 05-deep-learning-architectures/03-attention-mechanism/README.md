@@ -1,24 +1,9 @@
-# 03 · Attention Mechanism
+# Attention Mechanism
 
-注意力机制：QKV 检索类比、缩放点积注意力（手写 vs 官方对拍）、√d_k 的方差分析、注意力矩阵直觉、多头注意力实现。
+QKV 检索类比、缩放点积注意力（手写 vs 官方对拍）、√d_k 的方差分析、注意力矩阵直觉、多头注意力实现。
 
-## 前置要求
+**运行**：VS Code 打开 `attention-mechanism.ipynb`，内核选 **Python (deep-learning-architectures)**。
 
-- 概率 06（熵、softmax 分布）
-- linear-algebra（矩阵乘法）
+**前置**：建议对照 [probability 06](../03-probability/06-information-theory)
 
-## 课程内容
-
-| 章节 | 内容 |
-|------|------|
-| 1 | 从检索到注意力 |
-| 2 | 为什么要除以 √d_k |
-| 3 | 注意力矩阵直觉 |
-| 4 | 多头注意力 |
-| 5 | 注意力的概率视角 |
-| - | 课后练习 |
-
-## 学习建议
-
-- "除以 √d 保持方差 1"的推导是面试必考，必须独立完成
-- 多头 = 子空间分解，与 PCA 的"多方向"思想一脉相承
+**关键结论**："除以 √d 保持方差 1"的推导是面试必考；多头 = 子空间分解，与 PCA 的多方向思想一脉相承。
