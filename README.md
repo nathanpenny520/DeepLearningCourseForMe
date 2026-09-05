@@ -11,6 +11,8 @@
 | 概率统计 | 分布、期望方差、贝叶斯、极大似然、信息论、采样等 | [probability](./probability) | 8 |
 | 神经网络核心 | MLP、激活与损失、训练循环、正则化、初始化、优化器等 | [neural-networks](./neural-networks) | 8 |
 | CNN 与 Transformer | 卷积、经典网络、注意力、Transformer、GPT 等 | [deep-learning-architectures](./deep-learning-architectures) | 6 |
+| 计算机视觉 | ViT、迁移学习、检测分割、GAN、VAE、扩散模型、文生图等 | [computer-vision](./computer-vision) | 8 |
+| 大语言模型 | 分词、规模定律、预训练、LoRA、对齐、KV Cache、RAG、评估等 | [llm](./llm) | 8 |
 
 各模块内的具体课程目录见对应模块的 `README.md`。
 
@@ -55,7 +57,7 @@ DeepLearningCourseForMe/
         ├── README.md
         └── derivatives.ipynb
 
-# 其余模块（probability / neural-networks / deep-learning-architectures）
+# 其余模块（probability / neural-networks / deep-learning-architectures / computer-vision / llm）
 # 结构完全相同：README + guide + requirements + venv + 编号课程文件夹
 ```
 

@@ -1,0 +1,23 @@
+# ============================================================
+# computer-vision - Python 依赖
+# Python 版本：3.12（推荐，详见 guide.md）
+# 安装：uv pip install -r requirements.txt  或  pip install -r requirements.txt
+# ============================================================
+
+# --- 核心计算 ---
+
+# PyTorch：张量计算 + 自动求导（本课程核心库，与其它模块同版本）
+torch==2.13.0
+
+# NumPy：数值计算基础
+numpy==2.5.2
+
+# Matplotlib：数据可视化
+matplotlib==3.11.1
+
+# --- Jupyter 运行环境 ---
+
+ipykernel==7.3.0
+
+# jupyter：网页版 Jupyter Notebook 元包
+jupyter==1.1.1
