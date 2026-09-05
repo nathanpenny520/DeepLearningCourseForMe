@@ -7,13 +7,13 @@
 | # | 课程 | 文件夹 | 状态 |
 |---|------|--------|------|
 | 01 | Derivatives（导数：极限定义、求导法则证明、数值微分、梯度下降入门） | [01-derivatives](./01-derivatives) | ✅ |
-| 02 | Multivariate Calculus & Gradients（多元微积分与梯度向量） | — | 规划中 |
-| 03 | Jacobian & Chain Rule（雅可比矩阵与向量链式法则） | — | 规划中 |
-| 04 | Hessian & Taylor Expansion（Hessian 矩阵与二阶逼近） | — | 规划中 |
-| 05 | Automatic Differentiation & Backprop（自动微分与反向传播） | — | 规划中 |
-| 06 | Gradient Descent & Optimization（梯度下降、动量与学习率） | — | 规划中 |
-| 07 | Integration & Probability Bridge（积分入门与概率统计衔接） | — | 规划中 |
-| 08 | Calculus in Deep Learning（深度学习中的微积分综合应用） | — | 规划中 |
+| 02 | Multivariate Calculus & Gradients（多元微积分与梯度向量） | [02-multivariate-calculus-gradients](./02-multivariate-calculus-gradients) | ✅ |
+| 03 | Jacobian & Chain Rule（雅可比矩阵与向量链式法则） | [03-jacobian-chain-rule](./03-jacobian-chain-rule) | ✅ |
+| 04 | Hessian & Taylor Expansion（Hessian 矩阵与二阶逼近） | [04-hessian-taylor-expansion](./04-hessian-taylor-expansion) | ✅ |
+| 05 | Automatic Differentiation & Backprop（自动微分与反向传播） | [05-autograd-backpropagation](./05-autograd-backpropagation) | ✅ |
+| 06 | Gradient Descent & Optimization（梯度下降、动量与学习率） | [06-gradient-descent-optimization](./06-gradient-descent-optimization) | ✅ |
+| 07 | Integration & Probability Bridge（积分入门与概率统计衔接） | [07-integration-probability](./07-integration-probability) | ✅ |
+| 08 | Calculus in Deep Learning（深度学习中的微积分综合应用） | [08-calculus-in-deep-learning](./08-calculus-in-deep-learning) | ✅ |
 
 ## 环境配置
 
@@ -41,7 +41,28 @@ calculus/
 ├── guide.md               # 环境配置指南（全模块通用）
 ├── requirements.txt       # Python 依赖（全模块通用）
 ├── venv/                  # 虚拟环境（不提交）
-└── 01-derivatives/        # 第 1 课
+├── 01-derivatives/        # 第 1 课
+│   ├── README.md
+│   └── derivatives.ipynb
+├── 02-multivariate-calculus-gradients/
+│   ├── README.md
+│   └── multivariate-calculus-gradients.ipynb
+├── 03-jacobian-chain-rule/
+│   ├── README.md
+│   └── jacobian-chain-rule.ipynb
+├── 04-hessian-taylor-expansion/
+│   ├── README.md
+│   └── hessian-taylor-expansion.ipynb
+├── 05-autograd-backpropagation/
+│   ├── README.md
+│   └── autograd-backpropagation.ipynb
+├── 06-gradient-descent-optimization/
+│   ├── README.md
+│   └── gradient-descent-optimization.ipynb
+├── 07-integration-probability/
+│   ├── README.md
+│   └── integration-probability.ipynb
+└── 08-calculus-in-deep-learning/
     ├── README.md
-    └── derivatives.ipynb
+    └── calculus-in-deep-learning.ipynb
 ```
